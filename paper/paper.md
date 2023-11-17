@@ -10,12 +10,19 @@ authors:
 - name: Sebastian Hutschenreuter
   orcid: 0000-0002-6952-9688
   affiliation: "1, 2"
+- name: Teresa Bister
+  orcid: 0000-0003-4005-0857
+  affiliation: "3, 4"
 
 affiliations:
 - name: Institute for Astronomy (IfA), University of Vienna, T\"urkenschanzstrasse 17, A-1180 Vienna
   index: 1
 - name: Department of Astrophysics/IMAPP, Radboud University, P.O. Box 9010,6500 GL Nijmegen, The Netherlands
   index: 2
+- name: Department of High Energy Physics/IMAPP, Radboud University, P.O. Box 9010,6500 GL Nijmegen, The Netherlands
+  index: 3
+- name: Nationaal Instituut voor Kernfysica en Hoge Energie Fysica (NIKHEF), SciencePark, Amsterdam, The Netherlands
+  index: 4
 date: x x 2023
 bibliography: paper.bib
 ---
@@ -24,13 +31,13 @@ bibliography: paper.bib
 
 The Galactic magnetic field (GMF) is an integral component of the Milky Way, contributing a significant share to the energy budget of the interstellar medium (ISM) and influencing the dynamics of almost all of its components such as gas, dust, and cosmic rays. [@2013Beck]
 The interactions of particles with the GMF within the ISM also produce a multitude of observables, ranging from the radio regime to highly energetic cosmic rays. 
-Additionally, possible GMF interactions with e.g. axions make the GMF an ideal laboratory for the search for beyond Standard model particles.
-While all of these signals provide us with a wealth of information on the Galactic ISM, they also obfuscate the universe beyond. This makes it necessary to remove the Galactic contribution in the study of most extragalactic objects, which requires a detailed understanding of Galactic components such as the GMF.
+Additionally, possible GMF interactions with e.g. axions make the GMF an ideal laboratory for the search for beyond-Standard-Model particles.
+While all of these signals provide us with a wealth of information on the Galactic ISM, they also obscur the universe beyond. This makes it necessary to remove the Galactic contribution in the study of most extragalactic objects, which requires a detailed understanding of Galactic components such as the GMF.
 
 Constraining the GMF, however, is a delicate task as all available tracers are convolved with other components of the Milky Way, e.g. with the thermal electrons in the case of Faraday rotation, relativistic electrons in case of synchrotron radiation or dust properties in the case of (optical and infrared) stellar polarisation.
 
 Over the decades, the community has produced several models of the large scale GMF constrained by different tracers. 
-Additionally, more local measurements have allowed to constrain the GMF close to the sun, specifically in the local bubble. 
+Additionally, more local measurements have allowed to constrain the GMF close to the sun's location, specifically in the local bubble. 
 These models vary considerably between each other, highlighting the need of a holistic effort to constrain the Galactic magnetic fields. 
 [@Boulanger2018] have proposed the IMAGINE framework, which aims to connect this multitude of models and data with modern statistical inference engines.
 
