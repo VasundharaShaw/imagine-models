@@ -45,7 +45,7 @@ The aim of this model library is to provide a unified infrastructure to access m
 Explicitly, we have implemented bridges to the simulation engines Hammurabi [@Wang2020] and CRPRopa [@2022Batista], as well as the Bayesian inference software Nifty8 [@Nifty2019].  *This sentence might have to be revised depending on what is actually implemented when submitting*
 
 While the focus of the library is on parametric GMF models, it also provides infrastructure for scalar fields and specific implementations of thermal electron density models. 
-A further extension to other Galactic ISM components such as e.g. cosmic rays is envisioned.
+A further extension to other Galactic ISM components such as e.g. relativistic electrons is envisioned.
 
 
 # Features of the library
