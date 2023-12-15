@@ -16,7 +16,7 @@ A full list of implemented models can be found [here](#list-of-models).
 Requires:
 
 - [Python 3](https://www.python.org/) (>=3.6)
-- [C++](https://www.python.org/) (>=11)
+- [C++](https://isocpp.org/) (>=11)
 
 Python Libraries:
 
@@ -25,7 +25,8 @@ Python Libraries:
 Optional:
 
 - [FFTW3](http://fftw.org/) (>3.3, necessary for random models)
-- [autodiff](https://autodiff.github.io/) (>1.0, necessary for building gradients w.r.t. to model parameters)
+- [autodiff](https://autodiff.github.io/) (>1.0, necessary for building gradients w.r.t. to model parameters, requires Eigen3)
+- [Eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page) (>3.4, necessary dependency for autodiff)
 
 Optional (Developers):
 
@@ -34,22 +35,31 @@ Optional (Developers):
 Note that pybind is included in the current repository, so in the current state you should not need to install it.
 This may change in the future.  
 
-
 ## Installation 
-
-The installation procedures are preliminary only 
 
 
 ### Installation (C++)
 
-To install the C++ library (tested only under Debian until now):
- 
+To install the C++ library you need to clone the repository via
+
+    git clone -b branch_name --recursive https://github.com/IMAGINE-Consortium/imagine-models.git
+
+The `--recursive` flag makes sure that also the pybind module is cloned (to the `/extern` folder).
+This was tested only under Debian until now.
+
+After that, the following lines of code should install the library
+
 ```
 mkdir build
 cd build 
 cmake ..
 sudo make install 
 ```
+
+The installer will automatically figure out which of the optional dependencies you have installed. 
+
+If you want to disable those, you can do so by defining the `USE_AUTODIFF=OFF` and `USE_FFTW=OFF` environment variables BEFORE you run `cmake`. 
+
 
 
 ### Installation (Python)

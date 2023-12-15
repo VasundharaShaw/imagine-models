@@ -5,8 +5,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_SHARED_LIBRARY_SUFFIX ".so")
 
 set(IM_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/headers/)
-INCLUDE_DIRECTORIES ( "/usr/local/include/eigen3 " )
 set(IM_SOURCE_DIR ${PROJECT_SOURCE_DIR}/source)
+
+if (autodiff_FOUND)
+    INCLUDE_DIRECTORIES  (EIGEN_PATH) # ( "/usr/local/include/eigen3 " )
+endif()
 
 
 set(INCLUDE_INSTALL_DIR
@@ -15,7 +18,6 @@ set(INCLUDE_INSTALL_DIR
 
 
 set(IM_SRC_FILES
-  #  ${IM_SOURCE_DIR}/helpers.cc
     ${IM_SOURCE_DIR}/helix.cc
     ${IM_SOURCE_DIR}/jaffe.cc
     ${IM_SOURCE_DIR}/regularjf12.cc

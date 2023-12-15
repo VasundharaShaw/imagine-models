@@ -12,13 +12,14 @@ include(GNUInstallDirs)
 
 set(USE_AUTODIFF ON CACHE BOOL OFF)
 set(USE_FFTW ON CACHE BOOL OFF)
+set(EIGEN_PATH ON CACHE STRING /usr/include/eigen3)
 
 if (USE_AUTODIFF)
     message("-- Trying to find autodiff. Turn off via 'cmake ..DUSE_AUTODIFF=OFF'")
     find_package(autodiff)
     if (autodiff_FOUND)         
         message("-- autodiff library found: attempting to find Eigen3.")
-        set(autodiff_INCLUDE_DIRS /usr/include/eigen3)
+        set(autodiff_INCLUDE_DIRS EIGEN_PATH)
     
         find_package(Eigen3 REQUIRED NO_MODULE)
 
