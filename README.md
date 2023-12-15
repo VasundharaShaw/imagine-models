@@ -50,6 +50,7 @@ This was tested only under Debian until now.
 After that, the following lines of code should install the library
 
 ```
+cd imagine-models
 mkdir build
 cd build 
 cmake ..
