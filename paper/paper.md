@@ -16,6 +16,9 @@ authors:
 - name: Ashley Stock 
   orcid: 0000-0001-5351-824X
   affiliation: "5, 6, 7"
+- name: Vasundhara Shaw
+  orcid: 0000-0002-5824-7191
+  affiliation: "8"
 
 
 affiliations:
@@ -33,6 +36,8 @@ affiliations:
   index: 6
 - name: Canadian Institute for Theoretical Astrophysics, University of Toronto, 60 St. George Street, Toronto, ON M5S 3H8, Canada
   index: 7
+- name: Jodrell Bank Centre for Astrophysics, Alan Turing Building, School of Physics and Astronomy, The University of Manchester, Oxford Road, Manchester, M13 9PL, UK
+  index: 8
 date: x x 2023
 bibliography: paper.bib
 ---
