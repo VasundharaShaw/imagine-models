@@ -25,7 +25,9 @@ public:
   const double rho_GC = 1.; // interior boundary of GMF
 
   // fixed disk parameters
-  const double inc = 11.5; // inclination, in degrees
+  // const double inc = 11.5; // inclination, in degrees Original JF12 description
+
+  const double inc = 90.9; // inclination, in degrees
   const double rmin = 5.;  // outer boundary of the molecular ring region
   const double rcent = 3.; // inner boundary of the molecular ring region (field is
                            // zero within this region)
@@ -38,16 +40,25 @@ public:
       11.4, 12.7, 15.5}; // the radii where the spiral arm boundaries cross the
                          // negative x-axis
 
+  // number b_arm_1 = 0.1; Original JF12 description!
+  // number b_arm_2 = 3.0;
+  // number b_arm_3 = -0.9;
+  // number b_arm_4 = -0.8;
+  // number b_arm_5 = -2.0;
+  // number b_arm_6 = -4.2;
+  // number b_arm_7 = 0.0;
+
   number b_arm_1 = 0.1;
   number b_arm_2 = 3.0;
-  number b_arm_3 = -0.9;
-  number b_arm_4 = -0.8;
-  number b_arm_5 = -2.0;
-  number b_arm_6 = -4.2;
+  number b_arm_3 = 0.0;
+  number b_arm_4 = 0.0;
+  number b_arm_5 = 0.0;
+  number b_arm_6 = 0.0;
   number b_arm_7 = 0.0;
   number b_ring = 0.1;
   number h_disk = 0.40;
   number w_disk = 0.27;
+
   // toroidal halo parameters
   bool do_halo = true;
   number Bn = 1.4;
